@@ -1,0 +1,223 @@
+
+
+
+/* ------------------------------Maquetacion barra de navegacion ------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+nav {
+    height: 10vh;
+    background: -moz-linear-gradient(left, #ffffff  0%, #164af5 100%); 
+    background: -webkit-linear-gradient(left, #ffffff  0%,#164af5  100%); 
+    background: linear-gradient(to right, #ffffff  0%,#164af5 100%);
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.links li a {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 4px 0;
+    font-family: 'Orbitron', sans-serif;
+    transition: 0.7s ease-out;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+
+.links li a:hover{
+    color:rgb(154, 154, 241);
+    transition: all 0.5s ease-out;
+    } 
+
+
+.landing {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h1 {
+    margin: 100px;
+    font-size: 50px;
+    color: #ae5fce;
+}
+
+@media screen and (max-width: 768px) {
+    .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+
+nav{
+    position: relative;
+}
+
+.hamburguesa{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    }
+
+
+.links.open{
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+}
+
+.landing{
+    flex-direction: column;
+}
+    
+.links li{
+    opacity: 0;
+}
+
+
+.links li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+}
+
+.links li:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+}
+
+.links li:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+}
+
+li.fade {
+    opacity: 1;
+    }
+}
+
+.links img{
+    width: 6vh;
+}
+
+
+
+/* ------------------------------Maquetacion barra de navegacion ------------------------------*/
+
+
+
+
+
+
+
+
+/*---------------Cabecera---------------*/
+.cabecera{
+display:flex;
+flex-direction: column;
+}
+
+ 
+.usuario{
+    margin:0 auto;
+
+}
+
+
+.logo{
+    animation-name: avion;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+}
+
+@keyframes avion{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}     
+
+
+.flech{
+display:flex;
+justify-content: center;
+align-items: center;
+padding:20px
+}
+
+
+/* #flechita{
+    width: 15vh;
+    margin:0;
+    padding:0;
+} */
+/* #flechita:hover{
+    animation: shake 0.90s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(5, 5, 5);
+    backface-visibility: hidden;
+    perspective: 1000px;
+} */
+
+
+#flechita{
+    width: 15vh;
+    margin:0;
+    padding:0;
+    -webkit-transition: all 0.5s ease-out;
+ -moz-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+}
+
+#flechita:hover {
+    animation: shake 0.90s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(5, 5, 5);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+
+
+
+
+
+#textoIntro{
+    font: 90.5% Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-style: normal;
+    letter-spacing: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 15px 15px 15px rgb(0, 0, 0);
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------------  */
+
