@@ -1,8 +1,5 @@
 
 import React from "react";
-import Cajita1 from "./Cajita1"
-import Cajita2 from "./Cajita2"
-import Cajita3 from "./Cajita3"
 
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,58 +7,62 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class BootstrapCarouselComponent extends React.Component {
 
     state = {
-        ciudades1: ["San Luis","Cordoba","Bariloche","Mendoza"],    
-        ciudades2: ["Formosa","Jujuy","Salta","Tucuman"],
-        ciudades3: ["Corrientes","Entre Rios","Misiones","Santa fe"]
+        ciudades:[
+            ["San Luis","Cordoba","Bariloche","Mendoza"],    
+            ["Formosa","Jujuy","Salta","Tucuman"],
+            ["Corrientes","Entre Rios","Misiones","Santa fe"]
+        ]
     }
-    
+
     render() {
-    return (
+    return (   
                 <div className='container-fluid' >
-                    <div className="row">
+                    <div className="col">
                         <div className="col-sm-12">
                             <h3>Disfrutá al máximo tu destino</h3>
                     </div>
+         
+
+        <Carousel>
+        {this.state.ciudades.map(cajita => {
+            return (
+            <Carousel.Item>   
+
+    {cajita.map(cont => { 
+        return (
+<div className="container">
+    <div className="row">
+        <div className="col-md-4">
+            <div className="contenedor">
+                
+                <figure>
+              
+                    <img src={require(`../images/slider/${cont}.png`)} className="img-responsive" />
+                
+                    <div className="capa">
+                        <h3>{cont}</h3>
+                    </div> 
+                </figure>
+                
                 </div>
-            
-                        
-            <Carousel>
-                    <Carousel.Item> 
-                
-                    <div className="row">
-                
-                        {this.state.ciudades1.map(nombre => {
-                        return <div className="col"><Cajita1 data={nombre} /></div>      
-                        })}
-                    
-                    </div>
-            </Carousel.Item>
-    
-
-                <Carousel.Item>
-                    <div className="row">
-                
-                        {this.state.ciudades2.map(nombre => {
-                        return <div className="col"><Cajita2 data={nombre} /></div>      
-                        })}
-                    </div>  
-                </Carousel.Item>
-
-                
-                <Carousel.Item>
-                    <div className="row">
-                
-                        {this.state.ciudades3.map(nombre => {
-                        return <div className="col"><Cajita3 data={nombre} /></div>      
-                        })}
-                    </div>  
-                </Carousel.Item>
-            </Carousel>
+            </div>
         </div>
-            )
-        };
+    </div>    
+
+
+        )
+    })}     
+
+        </Carousel.Item>
+    )
+})} 
+        </Carousel>    
+        </div>
+        </div>
+            );
+        }
     }
 
- export default BootstrapCarouselComponent;
+export default BootstrapCarouselComponent;
 
 

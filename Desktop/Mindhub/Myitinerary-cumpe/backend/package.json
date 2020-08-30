@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "API agencia viajes",
+  "main": "server.js",
+  "scripts": {
+    "backend": "nodemon ./server.js",
+    "frontend": "cd .. && cd fronteend && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\""
+  },
+  "author": "Martin Cumpe",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "mongose": "0.0.2-security"
+  }
+}

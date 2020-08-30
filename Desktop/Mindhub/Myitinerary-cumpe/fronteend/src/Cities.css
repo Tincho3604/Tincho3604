@@ -1,0 +1,129 @@
+
+
+
+.imagenesCiudades{
+    width: 100%;
+    height: 100%;
+    padding-top:25px;
+    padding-bottom:25px;
+
+}
+.imagenesCiudades figure{
+    position:relative;
+    margin: 0 auto;
+    height: 40vh;
+    cursor: pointer;
+    width: 70vh;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.50);
+}
+.imagenesCiudades figure img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 500ms ease-out;
+}
+.imagenesCiudades figure .tituloCiudades{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,103,123,0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imagenesCiudades figure:hover > .tituloCiudades {
+    opacity: 1;
+    visibility: visible;
+}
+.imagenesCiudades figure:hover > .tituloCiudades h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.imagenesCiudades figure:hover > img{
+    overflow: hidden;
+    transform: scale(1.3);
+}
+.imagenesCiudades figure .tituloCiudades h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagenesCiudades h3{
+font: 100.5% Arial, Helvetica, sans-serif;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+font-style: normal;
+letter-spacing: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+font-weight: 65px;
+text-transform: none;
+color: rgb(255, 255, 255);
+text-shadow: 35px 35px 35px rgb(0, 0, 0);
+font-size: 35px;
+line-height: 60px;
+text-align: center;
+
+}
+/*  ----------------------------------------- Maquetacion de Caja ---------------------------------------- */
+
+.tituloCiudades h4{
+    color:rgb(255, 255, 255);
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 5vh;
+    letter-spacing: 9px;
+    padding-top:50px;
+    padding-bottom:15px;
+    border-bottom: 5px solid;
+    
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------- Maquetacion de filtro --------------------------------------*/
+
+input{
+	padding: 20px; 
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid darkgray;
+	margin-top: 10px;
+}
+
+input:hover{
+transform: scale(1.1);
+transition: all 0.1s ease;
+}
+
+.input-48{
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+
+
+/*-------------------------------------- Maquetacion de filtro --------------------------------------*/
+
+.total{
+    background-image: url("./images/globales/fondo3.png");
+    background-position: center;
+}
+
+

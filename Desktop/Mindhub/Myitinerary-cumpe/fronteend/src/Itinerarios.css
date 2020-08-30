@@ -1,0 +1,64 @@
+
+.card{
+    border:none;
+}
+
+.carta{
+    padding-bottom:25px ;
+}
+
+.card-header h5{
+    font-family: 'Architects Daughter', cursive;
+    font-size:5vh;
+}
+
+.card-header h4{
+    font-family: 'VT323', monospace;
+    font-size:8vh; 
+    text-align: center;
+    color:rgb(247, 163, 8);
+}
+
+.card-header h6{
+    font-family: 'VT323', monospace;
+    font-size:4vh; 
+    text-align: center;
+    color:wheat;
+}
+
+.card-body{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 35px;
+    font-family: 'Bebas Neue';
+    word-spacing: 5;
+    
+}
+
+.card-text{
+    font-family: 'Orbitron';
+    font-weight:900;
+    font-size: 30px;
+    border-top:none;
+}
+
+
+.btn{
+    background: linear-gradient(-90deg, #00c3ff, #67ff2afb); 
+    border:none;
+    color:rgb(255, 255, 255);
+    font-size:25px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.btn1:hover{
+    transform: scale(1.1);
+    transition: all 0.9s ease;
+    color:rgb(255, 255, 255);
+}
+
+.text-muted{
+    border:none;
+}

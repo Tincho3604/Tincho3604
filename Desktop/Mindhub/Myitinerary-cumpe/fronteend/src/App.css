@@ -1,18 +1,35 @@
+/* ------------------------------Maquetacion GENERAL------------------------------*/
 
-
-
-/* ------------------------------Maquetacion barra de navegacion ------------------------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body{
     font-family: sans-serif;
-    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    background-image: url("./images//globales/fondo7.png");
 }
+/* ------------------------------Maquetacion GENERAL------------------------------*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------Maquetacion barra del MENU------------------------------*/
 nav {
     height: 10vh;
     background: -moz-linear-gradient(left, #ffffff  0%, #164af5 100%); 
@@ -39,7 +56,6 @@ nav {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-
 
 
 .links li a:hover{
@@ -74,7 +90,7 @@ nav{
 }
 
 .hamburguesa{
-    position: absolute;
+    position: absolute; 
     cursor: pointer;
     right: 5%;
     top: 50%;
@@ -121,46 +137,99 @@ li.fade {
 
 
 
-/* ------------------------------Maquetacion barra de navegacion ------------------------------*/
 
-
-
-
-
-
-
-
-/*---------------Cabecera---------------*/
+/* -----  Usuario  -----   */
 .cabecera{
-display:flex;
-flex-direction: column;
-}
-
- 
-.usuario{
-    margin:0 auto;
-
-}
-
-
-.logo{
-    animation-name: avion;
-    animation-duration: .8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;    
-}
-
-@keyframes avion{
-    from{
-        transform: scale(1);
+    display:flex;
+    flex-direction: column;
     }
-    to{
-        transform: scale(1.1);
+    
+     
+    .usuario{
+        margin:0 auto;
+    
     }
-}     
+    
+/* -----  Usuario  -----   */
 
 
+
+
+
+/* -----  Links  -----   */
+
+    .dropbtn {
+        background-color:transparent;
+        /* color: rgb(0, 0, 0); */
+        padding: 5vh;
+        font-size: 16px;
+        border: none;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:rgb(70, 100, 236);
+        min-width: 160px;
+    
+        z-index: 1;
+    }
+    
+    
+    .dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    
+    .dropdown-content a:hover {background-color: rgb(117, 211, 255);
+        transition: all 0.3s ease;
+        -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+    
+    }
+    
+    
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    
+    .dropbtn:focus{
+        outline: none;
+    }
+/* -----  Links  -----   */
+/* ------------------------------  Maquetacion barra del MENU  -----------------------------------------   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------MAQUETACION DEL BROWSER-------------------------------------------  */
 .flech{
 display:flex;
 justify-content: center;
@@ -169,26 +238,13 @@ padding:20px
 }
 
 
-/* #flechita{
-    width: 15vh;
-    margin:0;
-    padding:0;
-} */
-/* #flechita:hover{
-    animation: shake 0.90s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(5, 5, 5);
-    backface-visibility: hidden;
-    perspective: 1000px;
-} */
-
-
 #flechita{
-    width: 15vh;
+    width: 10vh;
     margin:0;
     padding:0;
     -webkit-transition: all 0.5s ease-out;
- -moz-transition: all 0.5s ease;
- -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
 }
 
 #flechita:hover {
@@ -199,8 +255,116 @@ padding:20px
 }
 
 
+/* -------------------------------------MAQUETACION DEL BROWSER-------------------------------------------  */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ----------------------------------------- Maquetacion del HEADER ---------------------------------------- */
+.banner{
+	position: relative;
+	width: 100%;
+	height: calc(80vh - 50px);
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('./assets/img/banner-1.jpg');
+    animation: banner 28s infinite linear;
+    opacity:0.88;
+    filter:alpha(opacity=60)
+
+}
+
+.banner img{
+display:flex;	
+margin: 0 auto;  
+width: 50%;
+
+}
+
+
+.banner-content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 50%;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    
+}
+
+
+.banner-content a:hover{
+	background-color: #fff;
+	color: #333;
+}
+@keyframes banner{
+	0%{
+		background-image: url('./assets/img/banner-1.jpg');
+	}
+	25%{
+		background-image: url('./assets/img/banner-1.jpg');
+	}
+
+
+	26%{
+		background-image: url('./assets/img/banner-2.jpg');
+	}
+	50%{
+		background-image: url('./assets/img/banner-2.jpg');
+	}
+
+
+	51%{
+		background-image: url('./assets/img/banner-3.jpg');
+	}
+	75%{
+		background-image: url('./assets/img/banner-3.jpg');
+	}
+	
+
+	76%{
+		background-image: url('./assets/img/banner-4.jpg');
+	}
+	100%{
+		background-image: url('./assets/img/banner-4.jpg');
+	}
+
+}
 
 
 #textoIntro{
@@ -219,5 +383,52 @@ padding:20px
     text-align: center;
 }
 
-/* --------------------------------------------------------------------------------  */
+.logo{
+    animation-name: avion;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+}
 
+
+
+@keyframes avion{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}     
+/*  ----------------------------------------- Maquetacion del SLIDE DEL HEADER ---------------------------------------- */
+
+
+
+
+
+
+
+
+#page-content {
+    flex: 1 0 auto;
+   
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+    margin-top: 25px;
+  }
+ 
+.container img{
+    width: 15vh;
+    height: 10vh;
+    margin-right:25px;
+    cursor:pointer
+}
+
+.container img:hover{
+    overflow: hidden;
+    transform: scale(1.3);
+    transition: all 1000ms ease-out;
+}
