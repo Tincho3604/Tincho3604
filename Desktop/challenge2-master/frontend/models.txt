@@ -1,0 +1,133 @@
+// var itineraryDB = [
+//   (barcelona = [
+//     {
+//       title: "Gaudi In A Day",
+//       profile: ["url","GaudiLover"],
+//       rating: 34,
+//       duration: 12,
+//       priece: 100,
+//       hashtags: ["Art", "Architecture", "History"]
+//     },
+
+//     {
+//       title: "Tapa Till You Droppa",
+//       profile: ["url","HambreAlumna"],
+//       rating: 24,
+//       duration: 4,
+//       priece: 40,
+//       hashtags: ["Restaurants", "Food&Drink"]
+//     }
+//   ]),
+
+//   (Copenhagen = [
+//     {
+//       title: "Torvehallern Food Market",
+//       profile: ["url","Tfood"],
+//       rating: 20,
+//       duration: 4,
+//       priece: 50,
+//       hashtags: ["Food", "Drink"]
+//     },
+
+//     {
+//       title: "Canal Boat Tour",
+//       profile: ["url","boatGuy"],
+//       rating: 10,
+//       duration: 6,
+//       priece: 70,
+//       hashtags: ["Nature", "Boating"]
+//     }
+//   ])
+// ]
+/////////////////////////////////////////////////
+// app.get("/cities/insert", cors(), async (req, res) => {
+
+//   City.insertMany(
+//     [
+//       {
+//         "id": 1,
+//         "name": ["Hamburg", "Berlin", "Munich"],
+//         "country": "Germany"
+//       },
+//       {
+//         "id": 2,
+//         "name": ["Rome", "Milan", "Napoli"],
+//         "country": "Italy"
+//       },
+//       {
+//         "id": 3,
+//         "name": ["Paris", "Berlin", "Munich"],
+//         "country": "France"
+//       },
+//       {
+//         "id": 4,
+//         "name": ["London", "Milan", "Napoli"],
+//         "country": "UK"
+//       },
+//       {
+//         "id": 5,
+//         "name": ["Madrid", "Milan", "Napoli"],
+//         "country": "Spain"
+//       },
+//       {
+//         "id": 6,
+//         "name": ["Copenhagen"],
+//         "country": "Denmakr"
+//       },
+//       {
+//         "id": 7,
+//         "name": ["Oslo"],
+//         "country": "Norway"
+//       },
+//       {
+//         "id": 8,
+//         "name": ["Bucharest"],
+//         "country": "Rumanua"
+//       },
+//       {
+//         "id": 9,
+//         "name": ["Budapest"],
+//         "country": "Hungary"
+//       },
+//       {
+//         "id": 10,
+//         "name": ["Warsaw"],
+//         "country": "Poland"
+//       },
+//       {
+//         "id": 5,
+//         "name": ["Belgrade"],
+//         "country": "Serbia"
+//       },
+//       {
+//         "id": 11,
+//         "name": ["Vienna"],
+//         "country": "Austria"
+//       },
+//       {
+//         "id": 12,
+//         "name": ["Czech Republic"],
+//         "country": "Prague"
+//       },
+//       {
+//         "id": 13,
+//         "name": ["Sofia"],
+//         "country": "Bulgaria"
+//       },
+//       {
+//         "id": 14,
+//         "name": ["Stockholm"],
+//         "country": "Sweden"
+//       },
+//       {
+//         "id": 15,
+//         "name": ["Helsinki"],
+//         "country": "Finland"
+//       }
+//     ], (err, doc) => {
+//       if (err)
+//         throw err;
+//       console.log(doc);
+//     }
+//   )
+// })

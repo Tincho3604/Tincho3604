@@ -1,16 +1,15 @@
 
-import Header from '../components/Header'
 import React from 'react'
-import {connect} from 'react-redux'
-import userActions from '../redux/actions/userActions'
 import Swal from 'sweetalert2'
-import GoogleLogin from 'react-google-login';
+import { Alert } from 'reactstrap'
+// import GoogleLogin from 'react-google-login';
 
-
+// sweetalert2
 
 class SignUp extends React.Component{
     
     state={
+        visible:true,
         newUser:{
             user:"",
             password:"",
@@ -31,10 +30,15 @@ class SignUp extends React.Component{
             photo:"",
             passwordValidation: "",
             country:"",
-            role:""
+            role:"",
         } 
+       
     }
     
+    onDismiss = () => {
+        this.setState({visible:false})
+    }
+
     getForm = e =>{
         const property = e.target.name
         const value = e.target.value
@@ -45,6 +49,7 @@ class SignUp extends React.Component{
             }
         })
     }
+  
     submit = async e =>{
         
         const errors = this.state.errors
@@ -55,39 +60,65 @@ class SignUp extends React.Component{
 
         errors.user =
             this.state.newUser.user.length < 2
-            ? "The user must be at least 2 characters long! "
+            ? 
+            <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+            The user must be at least 2 characters long! 
+            </Alert>
             : ""
         errors.passwordValidation =
             this.state.newUser.password !== this.state.newUser.passwordValidation
-            ? "The entered passwords do not match"
+            ? 
+            <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+            The entered passwords do not match
+            </Alert>
+
             : ""
         errors.password = 
             validPassword.test(this.state.newUser.password)
             ?""
-            :"Password must be at least 6 characters, and must include one upper case letter, one lower case letter, and one numeric digit"
-        errors.name =
+            :<Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+            Password must be at least 6 characters, and must include one upper case letter, one lower case letter, and one numeric digit
+            </Alert>
+            
+            errors.name =
             this.state.newUser.name.length < 2
-            ? "The name must be 2 at least characters long! "
+            ? 
+            <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+            The name must be 2 at least characters long! 
+            </Alert>
             : ""
         errors.surname =
             this.state.newUser.surname.length < 2
-            ? "The surname must be at least 2 characters long! "
+            ? 
+            <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+            The surname must be at least 2 characters long! 
+            </Alert>
+         
             : ""
         errors.mail = 
             validEmailRegex.test(this.state.newUser.mail)
             ? ""
-            : "Enter a valid email"
+            
+            :  <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+                Enter a valid email
+                </Alert>
         errors.photo= 
             this.state.newUser.photo.length < 2
-            ? "Enter a valid link"
+            ?  <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+                Enter a valid link
+                </Alert>
             : ""
         errors.country = 
             this.state.newUser.country.length < 2
-            ? "Enter a valid country"
+            ?  <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+            Enter a valid country
+            </Alert>
             : ""
         errors.role = 
             this.state.newUser.country == ""
-            ? "Select an option"
+            ?  <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+                Select an option
+                </Alert>
             : ""
         this.setState({
             errors
@@ -157,23 +188,23 @@ class SignUp extends React.Component{
     render(){
         return (
             <>
-            <Header />
-            <div className="signContainer">
-                <div className=" titleContainer">
+           
+            <div className="signContainers">
+                <div className=" titleContainers">
                     <div className="line"></div>
-                    <h1 className="title">Sign Up</h1>
+                    <h1 className="titles">Sign Up</h1>
                     <div className="line"></div>
                 </div>
                     
-                <div className="inputs">
+                <div className="input">
                     <span className={this.state.errors.mail === "" ? "" : "logError"}>{this.state.errors.mail}</span>
                     <input className="mail" type="mail" placeholder="Enter your email" name="mail" onChange={this.getForm}></input>
                     
                     <span className={this.state.errors.user === "" ? "" : "logError"}>{this.state.errors.user}</span>
-                    <input className="account" type="text" placeholder="Enter your user" name="user" onChange={this.getForm}></input>
+                    <input className="accoun" type="text" placeholder="Enter your user" name="user" onChange={this.getForm}></input>
                     
                     <span className={this.state.errors.password === "" ? "" : "logError"}>{this.state.errors.password}</span>
-                    <input className="password" type="password" placeholder="Enter your password" name="password" onChange={this.getForm}></input>
+                    <input className="pass" type="password" placeholder="Enter your password" name="password" onChange={this.getForm}></input>
                     
                     <span className={this.state.errors.passwordValidation === "" ? "" : "logError"}>{this.state.errors.passwordValidation}</span>
                     <input className="passwordCheck" type="password" placeholder="Enter your password again" name="passwordValidation" onChange={this.getForm} ></input>
@@ -190,16 +221,16 @@ class SignUp extends React.Component{
                     <span className={this.state.errors.country === "" ? "" : "logError"}>{this.state.errors.country}</span>
                     <input className="country" type="text" placeholder="Your Country" name="country" onChange={this.getForm}></input>
 
-                    <button className="send" onClick={this.submit}>Sign Up</button>
+                    <button className="sen" onClick={this.submit}>Sign Up</button>
                     
-                    <GoogleLogin
+                    {/* <GoogleLogin
                         className="googleBtn"
                         clientId="204753879301-j9otsgm2bstkhae2rs9pf2b4kmgqamlu.apps.googleusercontent.com"
                         buttonText="Create account with Google"
                         onSuccess={this.responseGoogle}
                         onFailure={this.responseGoogle}
                         cookiePolicy={'single_host_origin'}
-                    />
+                    /> */}
                 </div>
             </div>
 
@@ -209,14 +240,16 @@ class SignUp extends React.Component{
     }
 }
 
-const mapDispatchToProps = {
-    createAccount: userActions.createAccount
-}
+// const mapDispatchToProps = {
+//     createAccount: userActions.createAccount
+// }
 
-const mapStateToProps = (state) =>{
-    return{
-        userLog: state
-    }
-}
+// const mapStateToProps = (state) =>{
+//     return{
+//         userLog: state
+//     }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignUp)
+// export default connect(mapStateToProps, mapDispatchToProps)(SignUp)
+
+export default SignUp

@@ -1,13 +1,9 @@
 
-import Header from '../components/Header'
+
 import React from 'react'
-import userActions from '../redux/actions/userActions'
-import {connect} from 'react-redux'
-import GoogleLogin from 'react-google-login';
-
-
+// import GoogleLogin from 'react-google-login';
 import Swal from 'sweetalert2'
-
+import { Alert } from 'reactstrap'
 
 class SignIn extends React.Component{
     state={
@@ -15,8 +11,15 @@ class SignIn extends React.Component{
             user:"",
             password:"",    
         },
-        error:""
+        error:"",
+    visible:true
     }
+
+    onDismiss = () => {
+        this.setState({visible:false})
+    }
+
+
     getForm = e =>{
         e.preventDefault()
         const property = e.target.name
@@ -38,7 +41,9 @@ class SignIn extends React.Component{
         e.preventDefault()
         if (this.state.logUser.name ==="" || this.state.logUser.password === "" ){
             this.setState({
-                error: "Both fields are required"
+                error: <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>
+                ¡Todos los campos son obligatorios!
+              </Alert>
             }) 
         }else{
             const logUser= {user:this.state.logUser.user , password: this.state.logUser.password}
@@ -82,10 +87,9 @@ class SignIn extends React.Component{
 
         return (
             <>
-            <Header />
-
+        
             <div className="signContainer">
-                <div className=" titleContainer">
+                <div className="titleContainer">
                     <div className="line"></div>
                     <h1 className="title">Sign In</h1>
                     <div className="line"></div>
@@ -96,33 +100,35 @@ class SignIn extends React.Component{
                     <input className="password" type="password" name="password" placeholder="Enter your password" onChange={this.getForm}></input>
                     
                     <button onClick={this.submit} className="send">Sign In</button>
-                    <GoogleLogin
+                    {/* <GoogleLogin
                         className="googleBtn"
                         clientId="204753879301-j9otsgm2bstkhae2rs9pf2b4kmgqamlu.apps.googleusercontent.com"
                         buttonText="Sign in with Google"
                         onSuccess={this.responseGoogle}
                         onFailure={this.responseGoogle}
                         cookiePolicy={'single_host_origin'}
-                    />
+                    /> */}
                 </div>
             </div>
-
-
+ 
 
             </>
         )
     }
 }
 
-const mapDispatchToProps = {
-    logUser: userActions.logUser,
-    getUser: userActions.getUser
-}
+// const mapDispatchToProps = {
+//     logUser: userActions.logUser,
+//     getUser: userActions.getUser
+// }
 
-const mapStateToProps = (state)=>{
-    return{
-        userLog: state.userRed
-    }
-}
+// const mapStateToProps = (state)=>{
+//     return{
+//         userLog: state.userRed
+//     }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignIn)
+// export default connect(mapStateToProps, mapDispatchToProps)(SignIn)
+
+
+export default SignIn

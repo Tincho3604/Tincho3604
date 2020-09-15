@@ -1,19 +1,21 @@
-import React, { useEffect } from 'react'
-import {connect} from 'react-redux'
-import userActions from '../redux/actions/userActions'
+// import React, { useEffect } from 'react'
+// import {connect} from 'react-redux'
+// import userActions from '../redux/actions/userActions'
 
-const LogOut = (props) =>{
-    useEffect(()=> {
-        props.unlogUser()
-        props.history.push('/')
-    }, [])
-    return(
-        null
-    )
-}
+// const LogOut = (props) =>{
+//     useEffect(()=> {
+//         props.unlogUser()
+//         props.history.push('/')
+//     }, [])
+//     return(
+//         null
+//     )
+// }
 
-const mapDispatchToProps={
-    unlogUser : userActions.unlogUser
-}
+// const mapDispatchToProps={
+//     unlogUser : userActions.unlogUser
+// }
 
-export default connect(null, mapDispatchToProps)(LogOut)
+// export default connect(null, mapDispatchToProps)(LogOut)
+
+// export default LogOut
