@@ -11,13 +11,13 @@ const userActions = {
             }
             if(!res.data.success && res.data.response !== undefined){
                 if(res.data.response.errors.mail !== undefined){
-                  error.mail = "That email is already used"
+                    error.mail = "That email is already used"
                 }
                 if(res.data.response.errors.user !== undefined){
-                   error.user = "That username is already used"
+                    error.user = "That username is already used"
                 }
                 return error
-               
+            
             }else{
                 dispatch({
                     type: "LOG_USER_INTO_APP",
@@ -29,8 +29,11 @@ const userActions = {
                 }
             }
         }
-
     },
+    
+    
+
+    
     getUser: user =>{
         return async (dispatch, getState) =>{
             
@@ -42,6 +45,8 @@ const userActions = {
             return res.data.success
         }
     },
+
+
     logUser : user =>{
         return async ( dispatch, getState) => {
             const res = await axios.post("http://localhost:4000/api/login", user)

@@ -163,11 +163,10 @@ class SignUp extends React.Component{
                 <div className=" titleContainer">
 
                     <h1 className="title">Sign Up</h1>
+
                 </div>
-                <img  className="animar" src={require('../images/casa-mila.png')} />
+                    
                 <div className="inputs">
-            
-                        
                     <span className={this.state.errors.mail === "" ? "" : "logError"}>{this.state.errors.mail}</span>
                     <input className="mail" type="mail" placeholder="Enter your email" name="mail" onChange={this.getForm}></input>
                     
@@ -186,10 +185,13 @@ class SignUp extends React.Component{
                     <span className={this.state.errors.surname === "" ? "" : "logError"}>{this.state.errors.surname}</span>
                     <input className="surname" type="text" placeholder="Enter your surname" name="surname" onChange={this.getForm}></input>
                     
+                    <span className={this.state.errors.photo === "" ? "" : "logError"}>{this.state.errors.photo}</span>
+                    <input className="pic" type="text" placeholder="Link to your profile pic" name="photo" onChange={this.getForm}></input>
                     
+                    <span className={this.state.errors.country === "" ? "" : "logError"}>{this.state.errors.country}</span>
+                    <input className="country" type="text" placeholder="Your Country" name="country" onChange={this.getForm}></input>
+
                     <button className="send" onClick={this.submit}>Sign Up</button>
-                
-                
                     
                     <GoogleLogin
                         className="googleBtn"

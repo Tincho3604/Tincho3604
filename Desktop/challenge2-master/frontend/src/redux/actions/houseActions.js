@@ -1,8 +1,7 @@
 import axios from 'axios'
 
-
-
 const houseActions = {
+    
     getHouses: () => {
         return async (dispatch, getState) =>{
             const response = await axios.get('http://localhost:4000/api/houses')
@@ -15,6 +14,26 @@ const houseActions = {
             
         }
     },
+
+    getHouseByUser: (token) => {
+        return async (dispatch, getState) =>{
+            const response = await axios.get('http://localhost:4000/api/houseByUser',{    
+            headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+        
+            const housesUser = response.data
+            dispatch({
+                type:'GET_HOUSE_BY_USER',
+                payload: housesUser.response
+            })
+            
+            return (housesUser)
+        }
+    },
+    
+
     getHouseById: (houseId) => {
         
         return async (dispatch, getState) =>{
@@ -28,6 +47,9 @@ const houseActions = {
             return (house)
         }
     },
+
+
+
     uploadHouse:(token) =>{
         return async (dispatch, getState)=>{
             await axios.post('httpe://localhost:4000/api/houses',{},{

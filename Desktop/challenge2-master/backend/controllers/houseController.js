@@ -18,7 +18,7 @@ const houseController={
     uploadHouse: async (req, res) => {
 
         var {address, neighborhood, squareMeters, bedrooms, bathrooms, price, garden, userId, photo, photo2, views} = req.body//destructuring
-        /* var userId = req.body.user */
+    
         const newHouse = new House({
             address, 
             neighborhood, 
@@ -78,7 +78,28 @@ const houseController={
                 response:"Error modifying House"})
         }
     },
-    getHouseById: async (res, req) =>{
+
+    getHouseByUser: async (req, res) =>{
+
+        try{
+            const data = await House.find({userId: req.user._id})
+            res.json({
+                success: true,
+                response:data
+            })
+        }catch(error){
+                res.json({
+                    success: false,
+                    response: error
+                })
+            }
+        },
+    
+
+
+
+
+    getHouseById: async (req, res) =>{
         var id = req.params.id
         try{
             const data = await House.find({_id: id})
@@ -92,7 +113,7 @@ const houseController={
                 response: "Error geting house"
             })
         }
-    }
+    },
 
 }
 

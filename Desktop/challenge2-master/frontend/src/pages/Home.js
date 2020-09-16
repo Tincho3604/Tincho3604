@@ -16,7 +16,7 @@ class Home extends React.Component{
     
     
     render(){
-        console.log(this.props)
+        console.log("Hola data", this.props)
         return(
             <>
             <Header />

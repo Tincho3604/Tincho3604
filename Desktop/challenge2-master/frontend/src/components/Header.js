@@ -24,6 +24,7 @@ const Header = (props) =>{
                         <NavLink className="link" to ="/buy">Buy a House</NavLink>
                         <NavLink className="link" to ="/sell">Sell a House</NavLink> 
                         <NavLink className="link" to ="/sign-out">Log Out</NavLink> 
+                        <NavLink className="link" to ="/myHouses">My Houses</NavLink>
                         <div className="userContent">
                             <img className="photoUser" src={props.userLogged.photo}></img>
                             <p className="userName">Welcome, {props.userLogged.name}</p>

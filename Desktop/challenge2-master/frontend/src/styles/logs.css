@@ -12,9 +12,7 @@
     color: rgb(0, 0, 0);
     box-shadow: 7px 13px 37px #000;
     background-image: url("https://image.freepik.com/vector-gratis/hombre-negocios-casa-bienes-raices-ubicacion-mapa_24640-35689.jpg"); 
-    background-size: cover;
-    margin-bottom:8vh; 
-  }
+}
 
 .titleContainer{
     margin: 0 auto;
@@ -46,8 +44,7 @@
     color: white;
     opacity: 0.9; 
     border:none;
-    margin-top:25vh;
-  }
+}
 
 .account{
     width: 100%;
@@ -138,11 +135,11 @@
 }
 
 
-.title{
+.titles{
     font-size: 60px;
     margin-bottom: 20px;
     font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .input{
@@ -375,38 +372,3 @@
       box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
     }
   }
-
-
-
-  /* ANIMACION DE FORM */
-
-.animar {
-  color: white;
-  padding: .2rem .3rem 1rem .3rem;
-  position: relative;
-  border-radius: 2rem 2rem 0 0;
-  animation-name: animar;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  margin-left: 50vh;
-}
-
-.animar{
-    width: 15vh;
-}
-
-@keyframes animar{
-  0%   {top: 500px; right:500px}
-  25%  {top: 300px; right:500px}
-  75%  {top: 50px; right:500px}
-  100% {top: 500px;}
-}
-
-/* ANIMACION DE FORM */
-
-
-.googleBtn{
-  width: 50vh;
-  margin: 0 auto;
- 
-}

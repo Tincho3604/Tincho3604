@@ -1,5 +1,6 @@
 const initialState = {
-    allHouses:[]
+    allHouses:[],
+    myHouses:[]
 }
 
 const houseReducer = (state = initialState, action) => {
@@ -17,11 +18,17 @@ const houseReducer = (state = initialState, action) => {
                 ...state,
                 filteredHouses
             }
-                    
+        
+        case 'GET_HOUSE_BY_USER':
+            return {    
+                ...state,
+                myHouses: action.payload
+        }
+
+
         default: 
             return state    
     }
-    
 }
 
 
