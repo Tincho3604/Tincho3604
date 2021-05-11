@@ -9,7 +9,13 @@ _I specialize in the area of ​​web and mobile development providing creative
 
 _Self-taught and with a good predisposition to face challenges._
 
-Skills: REACT-NATIVE / REACT / JS / HTML / CSS / C#
+## Skills: 
+*  REACT-NATIVE 
+*  REACT  
+*  JS  
+*  HTML 
+*  CSS 
+*  C#
 
 
 
