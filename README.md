@@ -1,13 +1,13 @@
 # 👋 My name is Martín.
 ![I am FULL STACK DEVELOPER [MERN]](https://user-images.githubusercontent.com/62455807/117752869-ea3a8000-b1ed-11eb-9f58-3741d3448010.png)
 
-I am Martin, I am a beginner in the world of programming, but I have a set of skills and techniques that I have acquired that allow me to demonstrate my potential.
+_I am Martin, I am a beginner in the world of programming, but I have a set of skills and techniques that I have acquired that allow me to demonstrate my potential._
 
 
-I specialize in the area of ​​web and mobile development providing creative and agile solutions
+_I specialize in the area of ​​web and mobile development providing creative and agile solutions._
 
 
-Self-taught and with a good predisposition to face challenges
+_Self-taught and with a good predisposition to face challenges._
 
 Skills: REACT-NATIVE / REACT / JS / HTML / CSS / C#
 
@@ -19,11 +19,4 @@ Skills: REACT-NATIVE / REACT / JS / HTML / CSS / C#
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Tincho3604&show_icons=true&count_private=true)  
 
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Tincho3604)  
-
-![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com/?user=Tincho3604)  
-
-![Profile views](https://gpvc.arturio.dev/Tincho3604)  
-
-![](https://github.com/hebertdev1/hebertdev1/blob/master/javascript.gif)
 
