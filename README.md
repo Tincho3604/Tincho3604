@@ -1,4 +1,29 @@
+# 👋 My name is Martín.
+![I am FULL STACK DEVELOPER [MERN]](https://user-images.githubusercontent.com/62455807/117752869-ea3a8000-b1ed-11eb-9f58-3741d3448010.png)
 
+I am Martin, I am a beginner in the world of programming, but I have a set of skills and techniques that I have acquired that allow me to demonstrate my potential.
+
+
+I specialize in the area of ​​web and mobile development providing creative and agile solutions
+
+
+Self-taught and with a good predisposition to face challenges
+
+Skills: REACT-NATIVE / REACT / JS / HTML / CSS / C#
+
+
+
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/Tincho3604)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/https://www.instagram.com/tincho_cumpe//)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg' alt='facebook' height='40'>](https://www.facebook.com/https://www.facebook.com/martin.cumpe/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='40'>](https://www.instagram.com/https://www.instagram.com/tincho_cumpe//)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' alt='YouTube' height='40'>](https://www.youtube.com/channel/https://www.youtube.com/channel/UCx6i6vPA1nqzVgLzxo86CqA)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>](https://unruffled-kare-0cfe62.netlify.app/)  
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Tincho3604)](https://github.com/anuraghazra/github-readme-stats)
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Tincho3604&show_icons=true&count_private=true)  
+
+![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Tincho3604)  
+
+![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com/?user=Tincho3604)  
+
+![Profile views](https://gpvc.arturio.dev/Tincho3604)  
 
 ![](https://github.com/hebertdev1/hebertdev1/blob/master/javascript.gif)
 
