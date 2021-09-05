@@ -1,4 +1,4 @@
-# 👋 I'am Martín.
+# 👋 Hi i'm martin and this is my github repository.
 ![I am FULL STACK DEVELOPER [MERN]](https://user-images.githubusercontent.com/62455807/117752869-ea3a8000-b1ed-11eb-9f58-3741d3448010.png)
 
 _I am Martin, I am a beginner in the world of programming, but I have a set of skills and techniques that I have acquired that allow me to demonstrate my potential._
