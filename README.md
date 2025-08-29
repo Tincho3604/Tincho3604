@@ -1,21 +1,3 @@
-# 👋 Hi i'm martin and this is my github repository.
-_I specialize in the area of ​​web and mobile development providing creative and agile solutions._
-_Self-taught and with a good predisposition to face challenges._
-
-## Skills: 
-*  REACT-NATIVE 
-*  REACT  
-*  JS  
-*  HTML 
-*  CSS 
-*  C#
-
 ![1660914591070](https://user-images.githubusercontent.com/62455807/185928303-76aaa406-5305-483e-b7b3-25b579d4a4d4.gif)
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/Tincho3604)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/martin-cumpe-77736a198/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg' alt='facebook' height='40'>](https://www.facebook.com/martin.cumpe/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='40'>](https://www.instagram.com/tincho_cumpe/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' alt='YouTube' height='40'>](https://www.youtube.com/channel/UClLM6Omg3qFe4GQzCHOJ11g)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>](https://unruffled-kare-0cfe62.netlify.app/)  
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Tincho3604)](https://github.com/anuraghazra/github-readme-stats)
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Tincho3604&show_icons=true&count_private=true)  
-
-
