@@ -1,26 +1,4 @@
----
-
-# 👋 Hey, I'm Martín — aka Tincho3604 👨‍💻
-
-<p align="center">
-  <a href="https://www.youtube.com/@clavecodecc3896" target="_blank">
-    <img src="https://readme-typing-svg.herokuapp.com?size=26&duration=3000&color=00C2FF&center=true&vCenter=true&width=650&lines=Fullstack+Developer;Creator+at+Clave+Code+CC+on+YouTube" />
-  </a>
-</p>
-
-
----
-
-## 🚀 About Me
-
-* 👨‍💻 **Software Development Engineer** at **FK-Tech (Solución Factory)** – Clave Code CC
-* 🌐 Focused on building **fullstack apps** with **React**, **Node.js**, **TypeScript** and **C# (.NET)**
-* 📈 Passionate about performance, clean architecture & developer experience
-* 📚 Constantly learning and improving algorithms (LeetCode, CodeSignal)
-* 🏫 Engineering student at **UTN**
-* 🤝 Love sharing what I learn & building cool projects
-
----
+<img width="1983" height="793" alt="ChatGPT Image 15 may 2026, 07_43_43 p m" src="https://github.com/user-attachments/assets/852bc05f-34b1-4c53-b3a3-268169264210" />
 
 ## 🧠 My Favorite Stack
 
